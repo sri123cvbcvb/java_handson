@@ -48,8 +48,8 @@ public class Date_time {
     System.out.println("==============Duration Calculation:=====================");
     LocalTime st = LocalTime.of(1, 20, 54);
     LocalTime et = LocalTime.of(2, 30, 23);
-    Duration howlong = Duration.between(st, et);
-    System.out.println(howlong);
+    Duration howlongs = Duration.between(st, et);
+    System.out.println(howlongs);
 }
 
 }
