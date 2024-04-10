@@ -5,6 +5,8 @@ import java.time.LocalTime;
 import java.time.Period;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class Date_time {
     public static void main(String[] args) {
@@ -50,6 +52,13 @@ public class Date_time {
     LocalTime et = LocalTime.of(2, 30, 23);
     Duration howlongs = Duration.between(st, et);
     System.out.println(howlongs);
+    System.out.println("============Formatting dates and times===================");
+    LocalDate ld = LocalDate.now();
+    DateTimeFormatter dtf = DateTimeFormatter.ISO_DATE;
+    System.out.println(ld.format(dtf));
+    DateTimeFormatter dtf1 = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
+    System.out.println(ld.format(dtf1));
+
 }
 
 }
