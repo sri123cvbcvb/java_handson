@@ -27,6 +27,7 @@ public class MethodRefference {
 }
 */
 //==============METHOD REFFERENCE FOR INSTANCE METHODS========================
+/*
 public class MethodRefference {
     public int addValues(int a){
         return a*2;
@@ -58,5 +59,58 @@ public class MethodRefference {
         Supplier<String> sp2 = mr::greeting;
         String sp3 = sp2.get();
         System.out.println(sp3);
+    }
+}
+ */
+//=======METHOD REFFERENCE FOR INSTANCE METHODS of an arbitrary object of a particular type:==============
+/* 
+public class MethodRefference {
+         public void mess(String mess){
+            System.out.println("how are you"+" "+mess);
+         }
+    public static void main(String[] args) {
+        String[] arr = {"mohan", "hari","surya"};
+        String arr2 = "sriram";
+
+        System.out.println("=============using_lambda============");
+        Arrays.stream(arr).forEach(input -> new MethodRefference().mess(input));
+
+        System.out.println("=============using_Method_refference============")
+        Arrays.stream(arr)
+              .forEach(new MethodRefference()::mess);
+        
+    }
+}
+*/
+//========================================Reference to a constructor:=================================
+class OuterMethodRefference {
+private String name;
+
+public OuterMethodRefference() {
+}
+
+public OuterMethodRefference(String name){
+    this.name = name;
+
+}
+
+public String getName() {
+    return name;
+}
+    
+}
+public class MethodRefference {
+
+    public static void main(String[] args) {
+        System.out.println("============Using lambda expression=======================");
+        Supplier<OuterMethodRefference> lambda_ref = ()-> new OuterMethodRefference("sriram");
+        OuterMethodRefference omrf = lambda_ref.get();
+        System.out.println(omrf.getName());
+
+        System.out.println("================Using method reference======================");
+        Supplier<OuterMethodRefference> method_ref = OuterMethodRefference::new;
+        OuterMethodRefference omrf2 = method_ref.get();
+        System.out.println(omrf2.getName());
+        
     }
 }
