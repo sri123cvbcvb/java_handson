@@ -41,5 +41,6 @@ public class Collections_handson {
         for (String string : name) {
             System.out.println(string);
         }
+        
     }
 }
