@@ -1,3 +1,9 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.*;
+
 public class Set_interface_handson {
     
     /* -> set interface ia an one of the part of the collection framework. it represents a generally 
@@ -14,8 +20,8 @@ public class Set_interface_handson {
      */
 
      public static void main(String[] args) {
-        List name = Arrays.asList(2,3,4,5);
-         int even = name.stream().filter(n -> n%2=0).reduce(0,(res,i)-> res+i).collect(collectors.toList());
+        List<Integer> name = Arrays.asList(2,3,4,5);
+         int even = name.stream().filter(n -> n%2==0).reduce(0,(res,i)-> res+i);
          System.out.println(even);
      }
 
