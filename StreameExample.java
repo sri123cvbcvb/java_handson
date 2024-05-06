@@ -17,9 +17,13 @@ public class StreameExample {
      */
 
      public static void main(String[] args) {
+        //find the sum of even number in given list:
         List<Integer> name = Arrays.asList(2,3,4,5);
          int even = name.stream().filter(n -> n%2==0).reduce(0,(res,i)-> res+i);
          System.out.println(even);
+         //find the even number in given list:
+         List<Integer> even1 = name.stream().filter(n -> n%2 ==0).toList();
+         even1.forEach(System.out::println);
      }
 
 }
