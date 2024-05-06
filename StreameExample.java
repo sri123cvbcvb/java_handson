@@ -1,10 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-import java.util.*;
 
-public class Set_interface_handson {
+public class StreameExample {
     
     /* -> set interface ia an one of the part of the collection framework. it represents a generally 
     unordered with collection of unique values. it will not allow dupicate values in the collection. 
