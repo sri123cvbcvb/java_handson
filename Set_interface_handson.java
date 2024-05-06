@@ -14,7 +14,9 @@ public class Set_interface_handson {
      */
 
      public static void main(String[] args) {
-        
+        List name = Arrays.asList(2,3,4,5);
+         int even = name.stream().filter(n -> n%2=0).reduce(0,(res,i)-> res+i).collect(collectors.toList());
+         System.out.println(even);
      }
 
 }
