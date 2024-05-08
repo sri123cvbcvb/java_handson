@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Counting_element",
+            "request": "launch",
+            "mainClass": "Counting_element",
+            "projectName": "java_demo_66819e28"
+        },
+        {
+            "type": "java",
+            "name": "CustomObjectOperation",
+            "request": "launch",
+            "mainClass": "CustomObjectOperation",
+            "projectName": "java_demo_66819e28"
+        },
+        {
+            "type": "java",
+            "name": "ConvertLowerToUpper",
+            "request": "launch",
+            "mainClass": "ConvertLowerToUpper",
+            "projectName": "java_demo_66819e28"
+        },
+        {
+            "type": "java",
+            "name": "SortAnArrayConvertToStream",
+            "request": "launch",
+            "mainClass": "SortAnArrayConvertToStream",
+            "projectName": "java_demo_66819e28"
+        },
+        {
+            "type": "java",
+            "name": "PerformCubeFindGreater50",
+            "request": "launch",
+            "mainClass": "PerformCubeFindGreater50",
+            "projectName": "java_demo_66819e28"
+        },
+        {
+            "type": "java",
+            "name": "ConcatenateTwoStreams",
+            "request": "launch",
+            "mainClass": "ConcatenateTwoStreams",
+            "projectName": "java_demo_66819e28"
+        },
+        {
+            "type": "java",
+            "name": "CheckArrayHaveDuplicate",
+            "request": "launch",
+            "mainClass": "CheckArrayHaveDuplicate",
+            "projectName": "java_demo_66819e28"
+        },
+        {
+            "type": "java",
             "name": "FindFirstRepeatedVal",
             "request": "launch",
             "mainClass": "FindFirstRepeatedVal",
